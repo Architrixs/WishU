@@ -36,6 +36,8 @@ animateCSS('three', 'rotateIn', 6);
 setTimeout(() => {  document.querySelector('.one').classList.add('animate__animated', 'animate__zoomOut'); }, 6 * 800);
 animateCSS('wish-hbd', 'fadeInUpBig', 0);
 animateCSS('wishText', 'fadeIn',0 );
+animateCSS('heart', 'bounceInLeft',0 );
+animateCSS('refresh-btn', 'bounceIn',0 );
 //animateCSS('smile', 'pulse', 0);
 //setTimeout(() => { createBalloons(100); }, 4 * 800);
 
@@ -73,7 +75,9 @@ function createBalloons(num) {
 window.onload = function() {
   createBalloons(50);
 }
-
+function refreshPage(){
+  window.location.reload();
+} 
 // const time = setTimeout(function () {
 //   $('div.one').removeClass("one").addClass("B");
 // }, 10000);

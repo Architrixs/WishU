@@ -6,6 +6,9 @@ img {
     width: 500px;
     height: 400px;
 }
+a {
+    text-decoration: none;
+}
 img.center {
     display: block;
     margin: 0 auto;
@@ -137,10 +140,11 @@ body {
   
 h5 {
     font-weight: lighter;
-    font-size: 2rem;
+    font-size: 1.8rem;
     margin: 10px 0 0;
 }
 .refresh-btn {
+    display: none;
     position: absolute;
     z-index: 5;
     height: 30px;
@@ -149,6 +153,7 @@ h5 {
 }
 .container div.buttons {
     top: 94vh;
+    z-index: 5;
 }
 span #heart-text {
     top: 10px;
@@ -158,18 +163,30 @@ span #heart-text {
     .container {
       width: 90%;
     }
+    .one {
+        font-size: 2rem;
+    }
+    .three {
+        font-size: 2.1rem;
+    }
     .four {
       width: 90%;
     }
     .wish-hbd {
-        font-size: 2.4em;
+        font-size: 1.8rem;
       }
     
     h5 {
-        font-size: 1.4rem;
+        font-size: 1.3rem;
       }
     img {
         width: 300px;
         height: 200px;
+    }
+    .refresh-btn {
+        display: none;
+    }
+    span #heart-text {
+        font-size: 0.4rem;
     }
 }

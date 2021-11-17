@@ -78,6 +78,15 @@ window.onload = function() {
 function refreshPage(){
   window.location.reload();
 } 
+var sec = 0;
+    function pad ( val ) { return val > 9 ? val : "0" + val; }
+    var timer = setInterval( function(){
+        document.getElementById("seconds").innerHTML=pad(++sec%60);
+        //document.getElementById("minutes").innerHTML=pad(parseInt(sec/60,10));
+    }, 1000);
+setTimeout(function () {
+      clearInterval(timer);
+  }, 23000);
 // const time = setTimeout(function () {
 //   $('div.one').removeClass("one").addClass("B");
 // }, 10000);

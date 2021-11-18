@@ -38,6 +38,7 @@ animateCSS('wish-hbd', 'fadeInUpBig', 0);
 animateCSS('wishText', 'fadeIn',0 );
 animateCSS('heart', 'bounceInLeft',0 );
 animateCSS('refresh-btn', 'bounceIn',0 );
+animateCSS('heart-icon', 'heartBeat', 0);
 //animateCSS('smile', 'pulse', 0);
 //setTimeout(() => { createBalloons(100); }, 4 * 800);
 
@@ -86,7 +87,7 @@ var sec = 0;
     }, 1000);
 setTimeout(function () {
       clearInterval(timer);
-  }, 23000);
+  }, 22000);
 // const time = setTimeout(function () {
 //   $('div.one').removeClass("one").addClass("B");
 // }, 10000);

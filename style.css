@@ -2,17 +2,27 @@
 html {
     box-sizing: border-box;
 }
+
+body {
+    margin: 0;
+    background-color: mediumpurple;
+    font-family: 'Ubuntu', sans-serif;
+}
+
 img {
     width: 500px;
     height: 400px;
 }
+
 a {
     text-decoration: none;
 }
+
 img.center {
     display: block;
     margin: 0 auto;
 }
+
 .animate__animated.animate__rotateIn {
     --animate-duration: 2s;
 }
@@ -32,17 +42,14 @@ img.center {
 .animate__animated.animate__bounceIn {
     --animate-delay: 4.2s;
 }
-body {
-    margin: 0;
-    background-color: mediumpurple;
-    font-family: 'Ubuntu', sans-serif;
-}  
+ 
 .invisible {
     opacity: 0;
 }
 .visible {
     opacity: 1;
 }
+
 .container {
     height: 100vh;
     width: 100vh;
@@ -147,9 +154,12 @@ h5 {
     font-size: 1.8rem;
     margin: 10px 0 0;
 }
+
+/* Remove `display: none` to use Refresh button and Count-up timer */
 #seconds {
     display: none;
 }
+
 .refresh-btn {
     display: none;
     position: absolute;
@@ -158,14 +168,12 @@ h5 {
     width: 30px;
     cursor: pointer;
 }
+
 .container div.buttons {
     top: 94vh;
     z-index: 5;
 }
-span #heart-text {
-    top: 10px;
-    font-size: 0.5rem;
-}
+
 #gradient-text {
     background-color: #ee1b1b;
     background-image: linear-gradient(45deg, #ff0000, #0d10aa);
@@ -175,6 +183,7 @@ span #heart-text {
     -webkit-text-fill-color: transparent; 
     -moz-text-fill-color: transparent;
 }
+
 @media screen and (max-width: 500px) {
     .container {
       width: 90%;
@@ -201,8 +210,5 @@ span #heart-text {
     }
     .refresh-btn {
         display: none;
-    }
-    span #heart-text {
-        font-size: 0.4rem;
     }
 }

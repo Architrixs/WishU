@@ -85,11 +85,18 @@ setTimeout(function () {
 }, 22000);
 
 
+// takes custom input from input.json from whichever field is not empty, otherwise html text is used.
 const fetchData = () => {
   fetch("input.json")
     .then(data => data.json())
-    .then(data => Object.keys(data))
-    .then(data => console.log(data))
+    .then(data => {
+      Object.keys(data).map(key => {
+        if (data[key] !== "") {
+            //console.log(key,data[key])
+            document.getElementById(key).innerText = data[key];
+          }
+        });
+    });
 }
 
 fetchData();

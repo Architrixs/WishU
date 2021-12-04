@@ -1,5 +1,6 @@
 # WishU
 #### A simple and special Birthday Wish Animation.
+Animations used from [Animate.css](https://animate.style/)
 #### Use it to wish your friends and loved ones.
 ## How to use:
 * Fork the repository
